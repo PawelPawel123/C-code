@@ -1,0 +1,31 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    double x;
+    int n;
+    cout << "Podaj argument x: ";
+    cin >> x;
+    cout << "Podaj liczbe n (1, 2 lub 3): ";
+    cin >> n;
+
+    double result;
+    switch (n) {
+        case 1:
+            result = sqrt(2 * x);
+            break;
+        case 2:
+            result = pow(x,3) - 4;
+            break;
+        case 3:
+            result = cos(x) + 1;
+            break;
+        default:
+            result = 1;
+    }
+
+    cout << "Wartosc funkcji f(x) = " << result << endl;
+    return 0;
+}
